@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   least = nil
   name_hash.collect do |key, value|
     binding.pry
-    if value < counter
+    if counter == 0 || value < counter
       counter = value
       least = key 
     end 
